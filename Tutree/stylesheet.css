@@ -1,0 +1,403 @@
+*{
+  		margin: 0;
+  		padding: 0;
+  		color: black !important;
+  	}
+    nav{
+      background-color: white;
+    }
+  	.active{
+  		color: orange !important;
+  		border-bottom: 3px solid orange;
+  	} 
+  	li a{
+  		width: 100%;
+  		height: 100%;
+  	}
+  	li a:hover{
+  		color: orange !important;
+  		border-bottom: 3px solid orange;
+      transition: .3s;
+  	}
+    .dropdown-menu {
+     min-width: 160px;
+    }
+
+    .dropdown-menu a {
+
+    padding: 12px 16px;
+    }
+  	.field{
+  		float: left;
+  	}
+  	.header{
+  		width: 100%;
+  		height: 115px;
+  		background-color: #152238;
+  	}
+  	input[type=text]{
+  		width: 390px;
+  		height: 47px;
+  		border:2px solid #ccc;
+  		border-radius: 6px;
+  		box-sizing: border-box;
+		  padding: 12px 20px 12px 40px;
+  	}
+
+    ::placeholder { 
+        color: lightgrey;
+        opacity: 1; 
+        }
+  	.srchicon{
+  		position: relative;
+      left: 20%;
+  	}
+  	.srchicon i{
+  		position: absolute;
+  		font-size: 25px;
+  		color: lightgrey !important;
+  		left: 3%;
+  		top: 22%;
+  	}
+  	.arrowicon{
+  		position: relative;
+      left: 20%;
+  	}
+  	.arrowicon i{
+  		position: absolute;
+  		font-size: 25px;
+  		color: lightgrey !important;
+  		left: 3%;
+  		top: 24%;
+  	}
+  	.biicon{
+  		position: relative;
+      left: 20%;
+  	}
+  	.biicon i{
+  		position: absolute;
+  		font-size: 32px;
+  		color: black;
+  		transform: translate(-40px,7px);
+  	}
+         #panel, #flip,#div{
+  background-color: #00172d;
+  border: none;
+}
+#flip{
+  display: none;
+}
+#panel {
+  width: 100%;
+}
+#div{
+  font-size: 23px;
+  color: #fff !important;
+}
+#div h3{
+  color: white !important;
+  padding-left: 300px;
+}
+.showfiltr{
+  display: none;
+}
+.subtn1{
+  display: none;
+} 
+
+
+.form{
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px 0px #ccc;
+  }
+
+    .accordion {
+    background-color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+
+.accordion:after {
+  content:'\002B';
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.Active:after {
+  content: "\2212";
+}
+
+.list{
+  padding: 0px 5px 10px 10px;
+}
+
+.jobs ul li{
+  list-style: none;
+}
+
+.feedback{
+  position: fixed;
+  right: 0;
+}
+
+
+.job-contents-lists{
+   width: 80%;
+   height: 250px;
+   margin-top: 20px;
+   background-color: white;
+   border-radius: 10px;
+}
+.job-contents-lists:hover{
+  box-shadow: 1px 1px 10px #ccc;
+  transition: .3s ease;
+  cursor: pointer;
+}
+.label{
+  display: block;
+  margin: 5px;
+  padding: 15px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+.mail{
+  background-color: white;
+  margin-left: 25px;
+}
+.mail:hover{
+  color: white !important;
+  background-color: #03a9f4 !important;
+}
+
+
+
+/* ------media queries--------*/
+
+@media (min-width: 991px) and (max-width: 1200px){
+.srchicon,.arrowicon,.biicon{
+  position: relative;
+  left: 15%;
+}
+input[type=text]{
+      width: 300px;
+      height: 40px;
+      border:2px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      padding: 12px 20px 12px 40px;
+    }
+input[type=submit]{
+  font-size: 15px !important;
+}
+#div h3{
+  position: relative;
+  left: 15%;
+  color: white !important;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 990px){
+  .logo{
+    position: relative;
+    width: 100%;
+  }
+  .logoimg{
+    position: absolute;
+    left: 38%;
+    top: -15%;
+    padding: 0px 20px 0px 20px;
+  }
+
+  #panel, #flip,#div{
+  padding: 5px;
+  text-align: center;
+  background-color: #00172d;
+  border: none;
+  
+}
+#div{
+  height: 70px;
+}
+#div h3{
+  position: relative;
+  left: -52%;
+  color: white !important;
+}
+#div i{
+  position: absolute;
+  right: -50%;
+}
+
+#flip{
+  display: inline;
+}
+
+#panel {
+  display: none;
+}
+.srchicon,.arrowicon,.biicon{
+  position: relative;
+  width: 100%;
+}
+input[type=text]{
+  width: 100%;
+  border-radius: 8px;
+}
+input[type=submit]{
+  width: 100%;
+  border-radius: 8px;
+}
+button[type=submit]{
+  width: 123%;
+  border-radius: 5px;
+  margin-top: 30px;
+}     
+.subtn{
+  width: 97%;
+  position: relative;
+  left: 1%;
+} 
+ 
+.srchicon{
+      position: relative;
+      left: 0%;
+      padding:0px 20px 10px 20px;
+    }
+    .srchicon i{
+      position: absolute;
+      font-size: 25px;
+      color: lightgrey !important;
+      left: 2%;
+      top: 1%;
+      padding: 10px 12px; 
+    }
+    .arrowicon{
+      position: relative;
+      left: 0%;
+      padding:0px 20px 10px 20px;
+    }
+    .arrowicon i{
+      position: absolute;
+      font-size: 25px;
+      color: lightgrey !important;
+      left: 2%;
+      top: 6%;
+      padding: 10px 12px; 
+    }
+    .biicon{
+      position: relative;
+      left: 0%;
+
+    }
+    .biicon i{
+      position: absolute;
+      font-size: 32px;
+      color: black;
+      left: 98%;
+      bottom: 150%;
+    }
+   .srchbtn{
+   position: absolute;
+   right: -28%;
+   top: 11%;
+  font-size: 17px !important;
+   }
+   .subtn1{
+    width: 100%;
+    padding: 0px 15px 0px 15px;
+    display: block;
+   }
+   .subtn1 input{
+    width: 100%;
+   }
+   .showfiltr{
+    display: inline;
+   }
+   .form{
+    display: none;
+   }
+
+   .feedback{
+    display: none;
+   }
+
+   .job-contents-lists{
+      width: 123%;
+    }
+
+
+
+
+
+
+@media screen and (max-width: 650px){
+  .srchicon i{
+      position: absolute;
+      font-size: 25px;
+      color: lightgrey !important;
+      left: 3%;
+      top: 1%;
+      padding: 10px 12px; 
+    }
+    .arrowicon i{
+      position: absolute;
+      font-size: 25px;
+      color: lightgrey !important;
+      left: 3%;
+      top: 6%;
+      padding: 10px 12px; 
+    }
+    .biicon i{
+      position: absolute;
+      font-size: 32px;
+      color: black;
+      left: 97%;
+      bottom: 150%;
+    }
+    .subtn{
+     width: 95%;
+     position: relative;
+     left: 2%;
+} 
+#div h3{
+  font-size: 25px;
+   left: -55%;
+}
+
+.logoimg{
+    position: absolute;
+    left: 29%;
+    top: -15%;
+    padding: 0px 20px 0px 20px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 525px){
+  #div h3{
+    font-size: 20px;
+    left: -59%;
+  }
+  #div i{
+    font-size: 13px !important;
+    right: -54%;
+  }
+}
+

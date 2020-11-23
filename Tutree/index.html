@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CAREER BUILDER</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<script>
+	$(document).ready(function(){
+  	$("#flip").click(function(){
+    $("#panel").slideToggle(500);
+  });
+});
+
+  $(document).ready(function(){
+  $(".showfiltr").click(function(){
+    $(".form").show();
+  });
+});
+</script>
+
+</head>
+<body style="background-color: #f6f6f6;">
+
+<nav class="navbar-nav navbar-expand-lg navbar-light pt-2 px-3 mynav">
+
+  <!-- Brand/logo -->
+  <div class="logo" style="display: flex;">
+  <a class="navbar-brand" href="#">
+    <button class="navbar-toggler navbar-toggler-icon navbtn" type="button" style="border: none;outline: none;width: 25px;" data-toggle="collapse" data-target="#collapsibleNavbar"></button>
+    <img class="logoimg" src="image/logo.png" alt="logo" style="width:225px;padding-top:7px; ">
+  </a></div>
+  
+  <!-- Links -->
+  <div class="collapse navbar-collapse mt-2" id="collapsibleNavbar">
+     <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link active pb-3" href="#">Find Jobs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link pb-3" href="#">Create your profile</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link pb-3" href="#">Recommendations</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link pb-3" href="#">Resources</a>
+    </li>
+  </ul>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link pb-3" href="#" style=" color: orange !important;border-bottom: 3px solid orange;transition: .3s;">Sign In</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link pb-3 dropdown-toggle" data-toggle="dropdown" href="#">Resources</a>
+      <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+    </div>
+    </li>
+  </ul>
+</div>
+  </nav>
+
+
+
+<header>
+  <div>
+    <div id="div" class="pt-3 pb-1"><h3>Jobs and vacancies<i id="flip" class="fa fa-search srchbtn" style="color: #03a9f4 !important; background-color: white; border-radius: 5px;"></i></h3></div>
+    <div id="panel" class="icon pb-3">
+      <form class="form-inline">
+      <div class="field srchicon">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="eg. Programmer"></input>
+      </div>
+      <div class="field arrowicon">
+        <i class="fa fa-location-arrow"></i>
+        <input type="text" placeholder="eg. Mumbai"></input>
+      </div>
+      <div class="field biicon"><i class="fa fa-bullseye"></i><div>
+      <div class="px-3">
+        <input type="submit" value="Find Jobs" style="color: white !important;background-color: #03a9f4; font-size: 20px; "id="sbmt" class="btn py-2" />
+
+      </div>
+      </form>
+    </div>
+  </div>
+</header>
+
+
+<section>
+  <div class="py-3">
+  <div class="subtn1">
+        <input type="submit" value="Shows filters" style="color: white !important;background-color: #03a9f4; font-size: 20px; display:"id="sbmt" class="btn px-5 py-2 showfiltr" />
+
+      </div>
+
+</div>
+
+
+<div style="margin-left: 15px; float: left;width: 18%;">
+<div>
+  <form class="form" style="padding: 10px 10px 10px 10px; background-color: #fff;">
+    <div class="jobs">
+      <div class="accordion" data-toggle="collapse" data-target="#accor"><strong style="font-size: 16px;">Data Posted</strong></div>
+  <div id="accor" class="list">
+    <ul>
+      <li>
+        <input type="radio" name="posted"><span class="p-2">24 hours</span>
+      </li>
+      <li>
+        <input type="radio" name="posted"><span class="p-2">3 days</span>
+      </li>
+      <li>
+        <input type="radio" name="posted"><span class="p-2">7 days</span>
+      </li>
+      <li>
+        <input type="radio" name="posted"><span class="p-2">30 days</span>
+      </li>
+    </ul>
+  </div>
+    </div>
+    <hr style="border-top: 1px dashed lightgrey;" >
+
+    <div class="jobs">
+      <div class="accordion" data-toggle="collapse" data-target="#accor1"><strong style="font-size: 16px;">Job Type</strong></div>
+  <div id="accor1" class="list">
+    <ul>
+      <li>
+        <input type="checkbox" name="posted"><span class="p-2">All</span>
+      </li>
+      <li>
+        <input type="checkbox" name="posted"><span class="p-2">Full-Time Employee</span>
+      </li>
+    </ul>
+  </div>
+  <hr style="border-top: 1px dashed lightgrey;">
+    </div>
+
+    <div class="jobs">
+      <div class="accordion" data-toggle="collapse" data-target="#accor2"><strong style="font-size: 16px;">Categories</strong></div>
+  <div id="accor2" class="list">
+    <ul>
+      <li>
+        <input type="checkbox" name="posted"><span class="p-2">Information Technology</span>
+      </li>
+      <li>
+        <input type="checkbox" name="posted"><span class="p-2">Other</span>
+      </li>
+    </ul>
+  </div>
+  <hr style="border-top: 1px dashed lightgrey;">
+    </div>
+
+    <div class="jobs">
+      <div class="accordion" data-toggle="collapse" data-target="#accor3"><strong style="font-size: 16px;">States</strong></div>
+  <div id="accor3" class="list">
+    <ul>
+      <li>
+        <input type="radio" name="posted"><span class="p-2">Karnataka</span>
+  
+      </li>
+      <li>
+        <input type="radio" name="posted"><span class="p-2">Kerala</span>
+      </li>
+      <li>
+        <input type="radio" name="posted"><span class="p-2">Tamil Nadu</span>
+  
+      </li>
+      <li>
+        <input type="radio" name="posted"><span class="p-2">Telangana</span>
+  
+      </li>
+    </ul>
+  </div>
+  <hr style="border-top: 1px dashed lightgrey;">
+    </div>
+
+    <div class="jobs">
+      <div class="accordion" data-toggle="collapse" data-target="#accor4"><strong style="font-size: 16px;">City</strong></div>
+  <div id="accor4" class="list">
+    <ul>
+      <li>
+        <input type="radio" name="posted"><span class="p-2">Bengaluru</span>
+ 
+      </li>
+      <li>
+        <input type="radio" name="posted"><span class="p-2">Thiruvanthapuram</span>
+        
+      </li>
+      <li>
+        <input type="radio" name="posted"><span class="p-2">Chennai</span>
+      </li>
+    </ul>
+  </div>
+
+  <hr style="border-top: 1px dashed lightgrey;">
+    </div>
+
+    <div class="jobs">
+   <button class="btn btn-primary btn-block py-2 text-light" style="font-size: 22px;">Filter jobs</button>
+
+  </div>
+  </form> 
+</div>
+</div>
+
+
+
+
+
+<article style="float: left;width: 80%; padding-left: 25px;">
+  
+  <button type="submit" class="btn btn-outline-primary text-primary" style="background-color: white;padding: 2px 3px 2px 0px;"><i class="fa fa-envelope-o text-primary px-2 pt-1 font-mail"></i>Email me jobs like these</button>  
+
+  <div class="my-3"><h6 style="font-size: 18px;">Sort By: <a href="#" style="text-decoration: none;" class="text-primary pl-2">Relevance</a> <span class="text-muted">|</span> <a href="#" class="text-primary" style="text-decoration: none;">Data</a></h6></div>
+
+  <hr style="border-top: 1px dashed lightgrey;">
+
+  <img class="feedback mt-3" src="image/feedback.jpg" data-toggle="modal" data-target="#mymodal" style="cursor: pointer;">
+
+   <!--            modal            -->
+  <div class="modal fade" id="mymodal">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content" style="height: 700px;border: 3px solid #000;">
+       <img src="image/cross.jpg" data-dismiss="modal" style="border-radius: 50%;width: 30px;position: absolute;right: -13px;top: -13px;cursor: pointer;">
+        <div class="pb-4" style="padding-top:50px;">
+          <img src="image/logo.png" alt="logo" style="width:30%;margin-left: auto;margin-right: auto;display: block;">
+        </div>
+        
+        <div class="dropdown pt-3" style="position: relative; left: 67%;">
+          <button type="button" class="dropdown-toggle" data-toggle="dropdown" style="background-color: white;">
+           <span style="padding: 5px 145px 5px 5px;">English</span>
+          </button>
+            <div class="dropdown-menu" style="box-shadow: 1px 1px 10px #ccc;width: 20%;">
+              <a class="dropdown-item" href="#">Deutsch</a>
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Nederlands</a>
+            </div>
+        </div>
+
+       
+
+        <div class="container" style="padding: 0px 150px 0px 150px">
+           <hr>
+          <div class="pb-3"><span style="font-size: 20px;">What type of feedback would you like to leave for us?</span></div>
+         
+            <div class="label">Suggestions or general feedback</div> 
+            <div class="label">Bug or site issue</div> 
+            <div class="label">Question</div> 
+          
+        </div>
+
+        <div style="position: relative; left: 81%;top: 10%;">
+          <button class="btn text-light" style="background-color: #152238;width: 60px;">>></button>
+        </div>
+
+        <div style="margin-left: auto;margin-right: auto;position: relative;top: 20%;">
+          <img src="image/footer.jpg" style="width: 80%;cursor: pointer;">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--             modal end         -->
+
+  <div class="job-contents pb-3">
+    <div class="job-contents-lists"></div>
+    <div class="job-contents-lists"></div>
+    <div class="job-contents-lists"></div>
+    <div class="job-contents-lists"></div>
+  </div> 
+
+
+</article>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("Active");
+  });
+}
+
+
+
+</script>
+</body>
+</html>
